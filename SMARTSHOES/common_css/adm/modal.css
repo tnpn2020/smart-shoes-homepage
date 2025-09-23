@@ -1,0 +1,161 @@
+/* 모달 검은색 배경 */
+.modal{display: none; position: fixed; z-index: 100; left: 0; top: 0; bottom:0; z-index: 101;
+    max-width:100%; width:100%;  height: 100%;  background-color: hsla(0,0%,0%,0.4); padding-left:16px; padding-right:16px;}
+    
+    .modal-wrap {position: relative; width: auto; margin:auto; height: auto;
+        top:50%; transform: translateY(-50%); background-color:#fff; z-index: 101;}
+    
+    .modal-xl{max-width:1200px;}
+    .modal-md{max-width:768px;}
+    .modal-sm{max-width:480px;}
+    .modal-xs{max-width:360px;}
+    
+    .modal-container{max-width:1024px; width: 100%; margin:auto; z-index:101;
+    position: relative;
+    /* display: -ms-flexbox; display: flex; -ms-flex-direction: column;  flex-direction: column;  pointer-events: auto; */
+     border-radius: .3rem;
+    outline: 0; }
+    
+    /* 2020-03-19 */
+    .modal-bd.bd{margin-left:0 !important; margin-right:0 !important; padding:0 !important;}
+    
+    .modal ul.btn-container > li{display: inline-block; margin-right:2px;}
+    .modal ul.btn-container > li:last-child{margin-right:-4px;}
+    
+    .modal ul.btn-container > li .btn{min-width: 128px; font-size:0.9em; height:46px;}
+    
+    /* 모달 닫기 */
+    .modal-close{position: absolute; right:16px; top:16px; font-size: 1.35em; line-height:1; cursor: pointer; display: block; z-index: 102;}
+    
+    .modal-container .modal-out-tit{padding-bottom:16px;  font-weight:700; font-size:1.25em;}
+    
+    .modal-container{padding:40px 32px 32px;}
+    .modal-container .example .img{padding-bottom:6px;}
+    .modal-container .example .text{line-height: 1.5; padding-bottom:12px;}
+    .modal-container .example .text .content{word-break: break-all;
+        white-space: normal;}
+    
+    .board_content{padding-bottom:24px;}
+    .board_content label{display: block; padding-bottom:8px;}
+    .file_update{width:100%; border:1px solid #dedede; background:#fff; height:32px; vertical-align: middle;}
+    textarea{ border:1px solid #dedede; height:200px; }
+    
+    .modal-container input[type=button]{padding-left:16px; padding-right:16px; cursor: pointer;}
+    
+    .modal-container .table_btn{text-align:center; padding-top:0;}
+    .modal-container .table_btn ul li{text-align:center;display:inline-block; margin:0 3px;}
+    
+    .guide_text{font-size:13px; padding-top:12px;}
+    
+    .fileBox ul{margin:0 -8px;}
+    .fileBox ul li{float:left; padding:0 8px; width:65%;}
+    .fileBox ul li:last-child{width:35%;}
+    .fileBox {width:100%;}
+    .fileBox .fileName {width:100%; height:30px;line-height:30px; border:none; background:rgba(255,255,255,0); border-bottom:1px solid #d1d1d1; vertical-align:middle}
+    .fileBox .btn_file {border:1px solid #d1d1d1; border-radius: 4px; background:#fff; height:30px;font-size:0.8em;line-height:30px;text-align:center;vertical-align:middle}
+    .fileBox input[type="file"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    
+    .modal_table{display: table; margin:0 auto;} 
+    
+    .modal_img_container{text-align: center;}
+    .modal_img_container img{width:100%;}
+    .wi_select_common {
+    width: 123px;
+    height: 45px;
+    padding: 0 18px;
+    vertical-align: middle;
+    background: url(https://s3.ap-northeast-2.amazonaws.com/lbplatform/images/timing/152711839681325.png) no-repeat 87% 50%;
+    background-color: #fff;
+    -webkit-appearance: none;
+    }
+    
+    
+    .simple_input{ text-align: center; padding-top:12px;}
+    .simple_input:first-child{padding-top:0;}
+    .simple_input ul li{display:inline-block;}
+    .wi_btn_common{height: 45px; background: #888889; color: #fff; padding:0 16px;}
+    
+    
+    .modal_img{max-height:100vh;}
+
+
+    /* 메인페이지 모달 */
+    .main_modal{background-color:rgba(0, 0, 0, 0.1);}
+    .main_modal .modal-wrap{
+        max-width: 430px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        width: 100%;
+        height: 70%;
+        }
+    .main_modal .modal-container{padding:0;
+        height: inherit;
+        line-height: 0;
+        }
+        .main_modal .modal-container img{
+            -webkit-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .main_modal_img{position: relative; display: block;}
+    .today_btn{ left:0; z-index:102; font-weight: normal; color:#626262; margin-top:20px;}
+
+
+    .new_modal{background-color:rgba(0, 0, 0, .1); max-width: 100%;}
+    .new_modal .modal-wrap{display: flex; flex-direction: row; background-color: transparent; top:4vh;
+        transform:inherit; -ms-transform:inherit; left:0; position: relative; z-index: 999;
+    }
+    .new_modal .modal-container{padding:0; margin:0 8px; width: 100%; height: 100%; max-width: 500px; border-radius: 0; z-index: 9999;}
+    .new_modal .modal-container a{}
+    .new_modal .modal-container img{background-color: #fff;}
+    .today_btn{position: absolute; left:0; top:calc(100% + 8px); z-index:102; font-weight: normal; color:#626262;}
+
+    .close_btn_area{background-color: #fff; border-top:1px solid #eee; width: 100%; position: relative; z-index: 200;}
+    .close_btn_area > li{width:50%; float:left; text-align: center; position: relative; padding:20px 12px; font-size: 0.9em; cursor: pointer;}
+    .close_btn_area > li:hover{font-weight: 500;}
+    .close_btn_area > li.close_btn_bar::before{content:''; width:1px; height:40%; position: absolute; left:0; top:30%; background-color: #e1e1e1;}
+
+
+/* ********************************************* *
+* height 800px max
+* ********************************************* */
+@media (max-height:800px){
+
+    .new_modal .modal-container{max-width: 450px;}
+}
+
+/* ********************************************* *
+* height 800px max
+* ********************************************* */
+@media (max-height:640px){
+
+    .new_modal .modal-container{max-width: 320px;}
+}
+
+
+/* ********************************************* *
+* 1024px max
+* ********************************************* */
+@media (max-width:1024px){
+
+    .new_modal .modal-wrap{top:32px;}
+    .new_modal{width:100%; height: 0; max-width: 100%;}
+    .new_modal .modal-container{position: absolute; top:0; left:0; margin:0;}
+
+}
+
+/* ********************************************* *
+* 480px max
+* ********************************************* */
+    @media (max-width:480px){
+
+        .main_modal{background-color:rgba(0, 0, 0, 0.5);}
+        .main_modal .modal-wrap{width: 80%;}
+        .today_btn{color:#fff;}
+        .modal ul.btn-container > li .btn{min-width: 96px;}
+        
+    }

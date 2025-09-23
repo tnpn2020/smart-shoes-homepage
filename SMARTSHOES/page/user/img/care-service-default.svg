@@ -1,0 +1,41 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25A69B;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#1E8A7F;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25A69B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E8A7F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- 중앙 케어 아이콘 -->
+  <circle cx="200" cy="150" r="50" fill="url(#iconGradient)" opacity="0.8"/>
+  <text x="200" y="165" text-anchor="middle" font-size="32" fill="white" font-weight="bold">🏥</text>
+  
+  <!-- 주변 서비스 아이콘들 -->
+  <circle cx="120" cy="100" r="20" fill="url(#iconGradient)" opacity="0.7"/>
+  <text x="120" y="110" text-anchor="middle" font-size="14" fill="white" font-weight="bold">📊</text>
+  
+  <circle cx="280" cy="100" r="20" fill="url(#iconGradient)" opacity="0.7"/>
+  <text x="280" y="110" text-anchor="middle" font-size="14" fill="white" font-weight="bold">🚨</text>
+  
+  <circle cx="120" cy="200" r="20" fill="url(#iconGradient)" opacity="0.7"/>
+  <text x="120" y="210" text-anchor="middle" font-size="14" fill="white" font-weight="bold">👨‍⚕️</text>
+  
+  <circle cx="280" cy="200" r="20" fill="url(#iconGradient)" opacity="0.7"/>
+  <text x="280" y="210" text-anchor="middle" font-size="14" fill="white" font-weight="bold">📋</text>
+  
+  <!-- 연결선 -->
+  <line x1="140" y1="120" x2="175" y2="150" stroke="#25A69B" stroke-width="2" opacity="0.4"/>
+  <line x1="260" y1="120" x2="225" y2="150" stroke="#25A69B" stroke-width="2" opacity="0.4"/>
+  <line x1="140" y1="180" x2="175" y2="150" stroke="#25A69B" stroke-width="2" opacity="0.4"/>
+  <line x1="260" y1="180" x2="225" y2="150" stroke="#25A69B" stroke-width="2" opacity="0.4"/>
+  
+  <!-- 하단 텍스트 -->
+  <text x="200" y="270" text-anchor="middle" font-size="14" fill="#25A69B" font-weight="bold">종합 케어 서비스</text>
+</svg>

@@ -1,0 +1,10 @@
+
+
+.tab-cont{}
+.tab-cont ul{
+  display:grid; grid-template-columns: repeat(auto-fill, minmax(16%, auto));
+  margin: 11.1rem 0 7.2rem;
+}
+.tab-cont ul li{}
+.tab-cont ul li a{font-size: 25px; font-weight:600; color:#ddd;}
+.tab-cont ul li.active a{color:#333;}

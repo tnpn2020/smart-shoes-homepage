@@ -1,0 +1,655 @@
+
+
+/* 게시판 섹션 */
+.board-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.board-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.board-actions .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size:16px;
+    transition: all 0.1s;
+    cursor: pointer;
+    transition:0.15s;
+    background:var(--primary-color);
+    color:#fff;
+}
+
+/* 검색 폼 */
+
+.search-form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    width: 500px;
+}
+
+.filter-select {
+    padding: 12px 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-select:focus {
+    border-color: #25A69B;
+}
+
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #25A69B;
+    color: white;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #1E8A7F;
+}
+
+
+
+
+/* 게시판 테이블 */
+.board-list {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.07); */
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.board-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.board-table th {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+.board-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+.board-table tbody tr:last-child td {
+    border-bottom:none;
+}
+
+.board-table tbody tr:hover {
+    background: #f7fdfcc5;
+}
+
+/* 컬럼 스타일 */
+.col-number {
+    width: 80px;
+    text-align: center;
+    color: #666;
+}
+
+.col-category {
+    width: 150px;
+    text-align: center;
+}
+
+.col-title {
+    min-width: 300px;
+}
+
+.col-title a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
+    font-size:16px;
+}
+
+.col-title a:hover {
+    color: #25A69B;
+}
+
+.comment-count {
+    color: #25A69B;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.col-author {
+    width: 130px;
+    text-align: center;
+    color: #666;
+}
+
+.col-date {
+    width: 130px;
+    text-align: center;
+    color: #666;
+}
+
+.col-status {
+    width: 130px;
+    text-align: center;
+}
+
+/* 카테고리 배지 */
+.category-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.category-badge.product {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.category-badge.service {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.category-badge.general {
+    background: #f0f9ff;
+    color: #2563eb;
+}
+
+.category-badge.technical {
+    background: #f3e8ff;
+    color: #9333ea;
+}
+
+/* 상태 배지 */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.status-badge.answered {
+    background: #D5F4E6;
+    color: #27AE60;
+}
+
+.status-badge.waiting {
+    background: #eee;
+    color: #999;
+}
+
+/* 비밀번호 모달 스타일 */
+.password-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.password-modal {
+    background: white;
+    border-radius: 10px;
+    padding: 0;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s ease;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.password-modal .modal-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-modal .modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.password-modal .close-modal {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.password-modal .close-modal:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+.password-modal .modal-body {
+    padding: 25px;
+}
+
+.password-modal .modal-body p {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.password-input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.password-input-group input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.password-input-group input:focus {
+    border-color: #25A69B;
+    box-shadow: 0 0 0 3px rgba(37, 166, 155, 0.1);
+}
+
+.password-input-group .btn {
+    padding: 12px 20px;
+    background: #25A69B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+}
+
+.password-input-group .btn:hover {
+    background: #1E8A7F;
+}
+
+.password-input-group .btn:active {
+    transform: translateY(1px);
+}
+
+/* 페이지네이션 스타일 */
+.paging-nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top:30px;
+}
+
+.paging-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    height: 40px;
+    padding: 0 16px;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.1s ease;
+}
+
+.paging-btn:hover {
+    background: var(--primary-color2);
+    border-color: var(--primary-color2);
+    color: #fff;
+}
+
+.paging-btn:hover i {
+    color:#fff;
+    transition:0.1s;
+}
+
+.paging-btn:active {
+    transform: translateY(0);
+}
+
+.paging-num-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.paging-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 8px;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    color: #495057;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.1s ease;
+}
+
+.paging-num:hover {
+    background: #f8f9fa;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.paging-num.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600; 
+}
+
+.paging-num.active:hover {
+    background: var(--primary-color2);
+    border-color: var(--primary-color2);
+}
+
+
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+
+    .nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .page-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .page-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .board-section {
+        padding: 60px 0;
+    }
+    
+    .board-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .board-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .search-form {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+    .filter-select {width:fit-content}
+
+    .search-box {width: 100%;max-width: unset;}
+    
+    .board-table {
+        font-size: 0.8rem;
+    }
+    
+    .board-table th,
+    .board-table td {
+        padding: 10px 15px;
+    }
+    
+    .col-category,
+    .col-author,
+    .col-date,
+    .col-status {
+        display: none;
+    }
+    
+    .col-title {
+        min-width: auto;
+    }
+
+    
+    .filter-select {
+        font-size: 14px;
+    }
+
+    .search-form {
+        padding:15px;
+    }
+
+    .board-actions .btn {
+        font-size:14px;
+    }
+
+    .board-table th,.board-table td {
+        font-size:14px;
+        vertical-align: middle;
+    }
+
+    .col-title a {
+        font-size:14px;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    .page-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .board-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .board-table th,
+    .board-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+        vertical-align: middle;
+    }
+    
+    .pagination {
+        gap: 5px;
+    }
+    
+    .page-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .filter-select option {
+        font-size:14px;
+    }
+}
+
+/* view 페이지 비밀번호 입력 폼 */
+.password-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.password-form h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.password-form p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.password-form .password-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.password-form .password-input-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.password-form .password-input-group input:focus {
+    outline: none;
+    border-color: #25A69B;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.view-section .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.view-section .btn-primary {
+    background: #25A69B;
+    color: white;
+}
+
+.view-section .btn-primary:hover {
+    background: #1E8A7F;
+}
+
+.view-section .btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.view-section .btn-secondary:hover {
+    background: #545b62;
+}
+
+.view-section .btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.view-section .btn-danger:hover {
+    background: #c82333;
+}

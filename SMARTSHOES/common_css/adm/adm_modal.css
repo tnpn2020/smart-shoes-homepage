@@ -1,0 +1,27 @@
+/* 모달 검은색 배경 */
+.modal{position: fixed; z-index: 100; left: 0; top: 0; bottom:0; z-index: 300;
+    max-width:100%; width:100%;  height: 100%; ; padding-left:16px; padding-right:16px; background-color: hsla(0,0%,0%,0.4)}
+    
+    .modal-wrap {position: relative; width: auto; margin:0 auto; top:50%; transform: translateY(-50%); pointer-events: none; z-index: 103;
+     }
+    .modal-xxxl{max-width: 1600px;}
+    .modal-xxl{max-width: 1400px;}
+    .modal-xl{max-width:1200px;}
+    .modal-md{max-width:768px;}
+    .modal-sm{max-width:480px;}
+    .modal-xs{max-width:360px;}
+    
+    .modal-container{max-height:90vh; width: 100%; margin:auto; z-index:104;  background-color:#fff; overflow-y: auto;
+    padding:32px 40px; box-shadow: 0 8px 20px 0 rgba(0,0,0,0.1), 0 8px 20px 0 rgba(0,0,0,0.1);
+    position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column;  flex-direction: column;
+    pointer-events: auto; background-clip: padding-box; border-radius:8px; outline: 0; height:auto;}
+    .modal .modal-head{font-size:1.35em; font-weight: 700; margin-bottom:0px;}
+    .modal .modal-body{ margin-top:24px; font-size:1.05em; line-height: 1.6; min-height: 46px;}
+    
+    .modal ul.btn-container{margin-top:32px;}
+    .modal ul.btn-container > li{display: inline-block; margin-right:2px;}
+    .modal ul.btn-container > li:last-child{margin-right:-4px;}
+    .modal ul.btn-container > li .btn{min-width: 112px; font-size:0.9em; height:40px;}
+    
+    /* 모달 닫기 */
+    .modal-close{position: fixed; right:0; top:-32px; font-size: 1.5em; line-height:1; cursor: pointer; display: block; z-index: 104; font-weight: 700; color:#fff;}

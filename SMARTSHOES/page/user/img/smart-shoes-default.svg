@@ -1,0 +1,55 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shoeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25A69B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E8A7F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="soleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 신발 바닥 -->
+  <ellipse cx="200" cy="280" rx="120" ry="15" fill="url(#soleGradient)" opacity="0.8"/>
+  
+  <!-- 신발 본체 -->
+  <path d="M 80 200 Q 60 180 80 160 L 120 140 Q 140 130 160 130 L 240 130 Q 260 130 280 140 L 320 160 Q 340 180 320 200 L 300 220 Q 280 230 260 230 L 140 230 Q 120 230 100 220 Z" fill="url(#shoeGradient)"/>
+  
+  <!-- 신발 끈 -->
+  <rect x="140" y="150" width="120" height="8" rx="4" fill="white" opacity="0.9"/>
+  <rect x="140" y="165" width="120" height="8" rx="4" fill="white" opacity="0.9"/>
+  <rect x="140" y="180" width="120" height="8" rx="4" fill="white" opacity="0.9"/>
+  
+  <!-- 신발 구멍 -->
+  <circle cx="160" cy="154" r="2" fill="#25A69B"/>
+  <circle cx="180" cy="154" r="2" fill="#25A69B"/>
+  <circle cx="200" cy="154" r="2" fill="#25A69B"/>
+  <circle cx="220" cy="154" r="2" fill="#25A69B"/>
+  <circle cx="240" cy="154" r="2" fill="#25A69B"/>
+  
+  <circle cx="160" cy="169" r="2" fill="#25A69B"/>
+  <circle cx="180" cy="169" r="2" fill="#25A69B"/>
+  <circle cx="200" cy="169" r="2" fill="#25A69B"/>
+  <circle cx="220" cy="169" r="2" fill="#25A69B"/>
+  <circle cx="240" cy="169" r="2" fill="#25A69B"/>
+  
+  <circle cx="160" cy="184" r="2" fill="#25A69B"/>
+  <circle cx="180" cy="184" r="2" fill="#25A69B"/>
+  <circle cx="200" cy="184" r="2" fill="#25A69B"/>
+  <circle cx="220" cy="184" r="2" fill="#25A69B"/>
+  <circle cx="240" cy="184" r="2" fill="#25A69B"/>
+  
+  <!-- 스마트 센서 표시 -->
+  <circle cx="320" cy="180" r="8" fill="#E74C3C" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="320" y="185" text-anchor="middle" font-size="6" fill="white" font-weight="bold">GPS</text>
+  
+  <!-- 배터리 표시 -->
+  <rect x="85" y="140" width="20" height="8" rx="2" fill="#F39C12" opacity="0.8"/>
+  <rect x="87" y="142" width="16" height="4" rx="1" fill="#2ECC71"/>
+  
+  <!-- 텍스트 -->
+  <text x="200" y="250" text-anchor="middle" font-size="14" fill="#25A69B" font-weight="bold">Smart Shoes</text>
+</svg>

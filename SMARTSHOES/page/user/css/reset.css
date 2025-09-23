@@ -1,0 +1,57 @@
+/* reset */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+    
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font-style:inherit;
+        vertical-align: baseline;
+        font-weight: normal;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    
+    ol, ul {list-style: none;}
+    blockquote, q {quotes: none;}
+    blockquote:before, blockquote:after, q:before, q:after { content: '';}
+    table {border-collapse:collapse; border-spacing:0;}
+    caption,th,td {text-align: left; font-weight: normal;}
+    a {
+        color:inherit;
+        cursor: pointer;
+        text-decoration:none;
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:top;
+        background:transparent;
+    }
+    
+    button{vertical-align:middle; outline: none; border:0; background:transparent; border-radius: 0; cursor: pointer; border:1px solid transparent; font-family: inherit;}
+    input, select {vertical-align:middle; font-family:sans-serif;}
+    select{-webkit-appearance: none; -moz-appearance: none; appearance: none;  background: url(https://lbcontents.s3.ap-northeast-2.amazonaws.com/images/IPIACOSMETIC/icon-arrow-st2.png) no-repeat 99% 50%; background-size:8px 5px;}
+    select::-ms-expand { display: none; }
+    img{border:0; object-fit: cover; max-width: 100%;}
+    
+    textarea{font-family:sans-serif;}

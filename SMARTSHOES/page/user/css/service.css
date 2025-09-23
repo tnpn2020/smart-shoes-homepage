@@ -1,0 +1,389 @@
+.service-wrap h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+
+/* 미션 및 비전 섹션 */
+.mission-vision {
+    padding: 100px 0;
+    background: white;
+}
+
+
+.mission-vision-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.mission-vision-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mission, .vision {
+    background: #fafafa;
+    padding: 2rem;
+    border-radius: 0 10px 10px 0;
+    border-left: 4px solid #25A69B;
+}
+
+.mission h3, .vision h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color2);
+}
+
+.mission p, .vision p {
+    color:#555;
+    font-size:18px;
+}
+
+.mission-vision-image {
+    width:100%;
+    aspect-ratio: 3/2;
+    border-radius:10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mission-vision-image img {
+    width: 100%;
+    height:100%;
+}
+
+.m-v-img2 {
+    position:absolute;
+    top:0;
+    left:0;
+    animation: m-v-img 7s infinite;
+}
+
+
+@keyframes m-v-img {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75%{
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 제품 개발 배경 섹션 */
+.development-background {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.development-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.development-background h2 {
+    margin-bottom:70px;
+}
+
+.step {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    border:1px solid var(--border-color);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-title {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+.step-number {
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.step h3 {
+    font-size: 24px;
+    color: #1e293b;
+    font-weight:500;
+}
+
+.step p {
+    word-break: keep-all;
+    font-size:18px;
+}
+
+/* 사회적 가치 섹션 */
+.social-value-text h2 {
+    color:#333;
+    text-align: left;
+}
+
+.social-value {
+    padding: 100px 0;
+    /* background: linear-gradient(135deg, #4DB6AC 0%, #25A69B 100%); */
+    background:#fff;
+    color: #333;
+}
+
+.social-value-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:70px;
+    align-items: center;
+}
+
+.social-value-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.value-list {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+.value-list li {
+    font-size:18px;
+    padding:20px 25px;
+    background:#fafafa;
+    border-radius: 10px;
+}
+
+.value-list li span {
+    display: inline-block;
+    font-weight: 700;
+    font-size:24px;
+    color:var(--primary-color);
+}
+
+.social-value-image {
+    width:100%;
+    aspect-ratio: 3/2;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.social-value-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    background: #25A69B;
+    color: white;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size:16px;
+    transition: all 0.1s;
+    cursor: pointer;
+    transition:0.15s;
+    margin-top:10px
+}
+
+.btn:hover {
+    background: #1E8A7F;
+}
+
+
+/* 파트너십 섹션 */
+.partnership {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.partnership h2 {
+    margin-bottom:70px;
+} 
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    align-items: center;
+}
+
+.partner-logo {
+    background: #fff;
+    border:1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    aspect-ratio: 3/1;
+}
+
+.partner-logo:hover {
+    transform: translateY(-3px);
+}
+
+.partner-logo img {
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.partner-logo:hover img {
+    filter: grayscale(0%);
+}
+
+
+@media (max-width:1024px) {
+    .development-steps {
+        gap:20px;
+    }
+
+    .mission-vision-content, .social-value-content {
+        gap:40px;
+    }
+
+    .mission-vision-text {
+        gap:20px;
+    }
+
+    
+}
+
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    
+    .page-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .development-background,.mission-vision {
+        padding: 80px 0;
+    }
+
+    .mission-vision-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .social-value-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .development-steps {
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .service-wrap h2 {
+        font-size: 30px;
+        word-break: keep-all;
+        text-align: center;
+    }
+
+    .mission h3, .vision h3,.step h3 {
+        font-size:20px;
+    }
+
+    .mission p, .vision p {
+        font-size:16px;
+    }
+
+    .step {
+        padding:30px;
+    }
+
+    
+    .step p {
+        font-size:16px;
+    }
+
+    .social-value-text p {
+        font-size:16px;
+        word-break: keep-all;
+    }
+
+    .value-list li {
+        font-size:16px;
+        word-break: keep-all;
+    }
+
+    .social-value-text .btn {
+        margin-top:30px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .page-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .page-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .mission-vision h2,
+    .development-background h2,
+    .social-value-text h2,
+    .team h2,
+    .partnership h2 {
+        font-size: 2rem;
+    }
+    
+    .step,
+    .team-member {
+        padding: 1.5rem;
+    }
+    
+    .mission, .vision {
+        padding: 1.5rem;
+    }
+
+    
+    .service-wrap h2 {
+        font-size: 26px;
+    }
+    
+
+}

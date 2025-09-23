@@ -1,0 +1,540 @@
+
+/* 전시회 섹션 */
+.promos {
+    padding: 80px 0;
+    background: #fcfcfc;
+}
+
+.promo-item {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding:80px 100px;
+}
+
+/* .promo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+} */
+
+.promo-header {
+    padding:0 30px 30px;
+    border-bottom:1px solid #ddd;
+}
+
+.promo-title {
+    padding: 0px 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.promo-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.award-badge {
+    
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.promo-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.promo-meta span {
+    color: #666;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.promo-meta span i {
+    font-size:20px;
+}
+
+
+
+.promo-content>div:nth-child(2) {
+    max-width:400px;
+}
+
+.promo-content>div:first-child {
+    width:100%;
+}
+
+.promo-content {
+    display: flex;
+    gap:80px;
+    padding: 30px 30px 0;
+}
+
+.promo-text {
+    min-width:400px;
+}
+
+.promo-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+.promo-image-wrap {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.promo-image {
+    width:100%;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.promo-text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 40px 0 20px;
+}
+
+
+.gallery-item {
+    border-radius: 8px;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin:5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height:100%;
+    object-fit: contain; /* 모든 이미지가 영역을 벗어나지 않도록 */
+}
+
+.slick-btn {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:50;
+    background:#ffffff7a;
+    width:fit-content;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    padding:5px;
+}
+
+.slick-btn i {
+    font-size:22px;
+    color:#333;
+    opacity: 0.5;
+    line-height:1;
+}
+
+
+.slick-btn.slick-prev {
+    left:7px;
+}
+
+.slick-btn.slick-next {
+    right:5px;
+}
+
+
+.promo-item:nth-child(2n) .promo-content {
+    flex-direction: row-reverse;
+}
+
+/* 기존 slide-nav-wrap 스타일은 새로운 정의로 통합됨 */
+
+.slide-nav-wrap .slide_btn {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slide_btn.prevArrow {
+    left:-10px;
+}
+
+.slide_btn.nextArrow {
+    right:-10px;
+}
+
+.slide_btn i {
+    font-size:36px;
+    color:#aaa;
+}
+
+
+
+
+
+
+/* 반응형 디자인 */
+
+@media (max-width:1024px) {
+    .promo-item {
+        padding:40px;
+    }
+
+    .promo-content {
+        gap:50px;
+        padding:30px 10px 0;
+    }
+
+    .promo-image {
+        margin-bottom:10px;
+    }
+
+    .slick-btn i {
+        font-size:20px;
+    }
+
+    .pull-right {
+        margin-right:0.1em;
+    }
+
+    .pull-left {
+        margin-left:0.1em;
+    }
+
+    .promo-header {
+        padding: 0 10px 30px;
+    }
+
+    .promo-title h2 {
+        font-size:28px;
+    }
+
+
+}
+
+
+@media (max-width:900px) {
+
+    .promo-content {
+        gap:30px;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .promos {
+        padding: 60px 0;
+    }
+    
+    .promo-title {
+        padding: 25px 25px 15px;
+    }
+    
+    .promo-title h2 {
+        font-size: 1.6rem;
+        min-width: auto;
+    }
+
+    .promo-content {
+        flex-direction: column;
+    }
+
+    .promo-title {
+        flex-direction: column-reverse;
+        gap:10px;
+    }
+
+    .promo-item {
+        padding:15px;
+        margin-bottom:20px;
+    }
+    
+    .promo-meta {
+        padding: 0 25px;
+    }
+    
+    .promo-text p {
+        font-size: 1rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    
+
+    .slick-btn i {
+        font-size:18px;
+    }
+
+    
+    .promo-item:nth-child(2n) .promo-content {
+        flex-direction: column;
+    }
+
+    .slide-nav-wrap {
+        margin-top:30px;
+    }
+
+
+    .slide_btn i {
+        font-size:26px;
+    }
+
+    
+    .slide_btn.prevArrow {
+        left:0px;
+    }
+
+    .slide_btn.nextArrow {
+        right:0px;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    
+    .promo-title {
+        padding: 20px 10px 10px;
+    }
+    
+    .promo-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .promo-header {
+        padding:0 10px 10px;
+    }
+    
+    .promo-meta {
+        padding: 0 10px 10px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .promo-content {
+        padding:  25px 10px 0;
+        gap:20px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slide_btn i {
+        font-size:20px;
+    }
+}
+
+/* 단일 이미지 스타일 */
+.promo-image-wrap.single-image .promo-main-image {
+    width: 100%;
+    max-width: 600px;
+    height: 100%; /* 전체 높이 사용 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo-image-wrap.single-image .promo-main-image img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* 이미지 전체 영역 스타일 */
+.promo-image-wrap {
+    height: 120%; /* 부모 높이의 1.2배로 축소 (150% → 120%) */
+    min-height: 500px; /* 최소 높이 축소 (600px → 500px) */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 서브 이미지가 있을 때 메인 이미지와 서브 이미지 영역의 균형 조정 */
+.promo-image-wrap:not(.single-image) .promo-image-view {
+    flex: 1; /* 메인 이미지도 적절한 공간 사용 */
+    margin-bottom: 10px; /* 여백 축소 (15px → 10px) */
+}
+
+.promo-image-wrap:not(.single-image) .slide-nav-wrap {
+    flex: 0 0 auto; /* 서브 이미지는 고정 크기 */
+    height: auto;
+}
+
+/* 빈 상태 스타일 */
+.empty-state {
+    text-align: center;
+    padding: 100px 20px;
+    color: #666;
+}
+
+.empty-state h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.empty-state p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 서브 이미지 슬라이드 스타일 (3개씩 보여주기) */
+.slide-nav-wrap {
+    padding: 10px; /* 패딩 축소 (15px → 10px) */
+    margin-top: 10px; /* 상단 여백 축소 (15px → 10px) */
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+    /* 3개의 큰 이미지가 보이도록 너비 계산: (400px + 10px margin) * 3 + 15px gap * 2 */
+    width: calc((400px + 10px) * 3 + 15px * 2);
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* 메인 이미지 + content 합친 높이에 맞춤 */
+    min-height: 450px; /* 최소 높이 축소 (600px → 450px) */
+}
+
+.promo-image-nav {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.5s ease-in-out;
+    width: max-content; /* 모든 아이템을 포함할 수 있는 너비 */
+}
+
+.promo-image-nav .gallery-item {
+    flex: 0 0 auto;
+    width: 400px; /* 너비를 2배로 확대 (200px → 400px) */
+    height: 300px; /* 높이를 적당히 조정해서 밸런스 맞춤 */
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 5px;
+}
+
+.promo-image-nav .gallery-item img {
+    width: 100%;
+    height: 100%; /* 원래 디자인대로 100% */
+    object-fit: contain; /* 서브 이미지도 영역을 벗어나지 않도록 */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.promo-image-nav .gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 슬라이드 버튼 상태 */
+.slide_btn.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* 메인 이미지 고정 스타일 */
+.promo-image-view {
+    margin-bottom: 15px; /* 서브 이미지와 간격 축소 (20px → 15px) */
+    height: 100%; /* 부모 높이에 맞춤 */
+    min-height: 500px; /* 메인 이미지 최소 높이 축소 (600px → 500px) */
+    display: flex; /* flexbox로 정렬 */
+    align-items: stretch; /* 세로 방향 전체 채움 */
+}
+
+.promo-image-view .gallery-item {
+    display: block !important; /* 메인 이미지는 항상 표시 */
+    width: 100%; /* 전체 너비 사용 */
+    height: 100%; /* 부모 높이에 맞춤 */
+    min-height: 500px; /* 최소 높이 축소 (600px → 500px) */
+}
+
+.promo-image-view .gallery-item img {
+    width: 100%;
+    height: 100%; /* gallery-item에 맞춤 */
+    border-radius: 15px;
+    object-fit: contain; /* 이미지가 영역을 벗어나지 않고 전체가 보이도록 */
+    display: block; /* block으로 설정하여 컨테이너 크기에 맞춤 */
+}
+
+/* 반응형: 모바일에서는 2개씩 */
+@media (max-width: 768px) {
+    .promo-image-wrap {
+        min-height: 400px; /* 모바일에서 이미지 영역 높이 축소 (500px → 400px) */
+    }
+    
+    .promo-image-view {
+        height: 100%; /* 부모 높이에 맞춤 */
+        min-height: 350px; /* 모바일 메인 이미지 높이 축소 (450px → 350px) */
+    }
+    
+    .promo-image-view .gallery-item {
+        min-height: 350px; /* 모바일에서 gallery-item 높이 축소 (450px → 350px) */
+    }
+    
+    .slide-nav-wrap {
+        /* 2개의 큰 아이템이 보이도록 너비 계산: (300px + 10px margin) * 2 + 15px gap * 1 */
+        width: calc((300px + 10px) * 2 + 15px * 1);
+    }
+    
+    .promo-image-nav .gallery-item {
+        width: 300px; /* 모바일에서도 큰 너비 */
+        height: 250px; /* 모바일에서 적당한 높이 */
+    }
+}
+
+/* 반응형: 작은 모바일에서는 1개씩 */
+@media (max-width: 480px) {
+    .promo-image-wrap {
+        min-height: 350px; /* 작은 모바일에서 이미지 영역 높이 축소 (400px → 350px) */
+    }
+    
+    .promo-image-view {
+        height: 100%; /* 부모 높이에 맞춤 */
+        min-height: 300px; /* 작은 모바일 메인 이미지 높이 축소 (375px → 300px) */
+    }
+    
+    .promo-image-view .gallery-item {
+        min-height: 300px; /* 작은 모바일에서 gallery-item 높이 축소 (375px → 300px) */
+    }
+    
+    .slide-nav-wrap {
+        /* 1개의 큰 아이템이 보이도록 너비 계산: 300px + 10px margin */
+        width: calc(300px + 10px);
+    }
+    
+    .promo-image-nav .gallery-item {
+        width: 300px; /* 작은 모바일에서도 큰 너비 */
+        height: 200px; /* 작은 모바일에서 적당한 높이 */
+    }
+}

@@ -1,0 +1,37 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25A69B;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#1E8A7F;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25A69B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E8A7F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- 미션 아이콘 -->
+  <circle cx="120" cy="100" r="40" fill="url(#iconGradient)" opacity="0.8"/>
+  <text x="120" y="110" text-anchor="middle" font-size="24" fill="white" font-weight="bold">🎯</text>
+  <text x="120" y="160" text-anchor="middle" font-size="12" fill="#25A69B" font-weight="bold">미션</text>
+  
+  <!-- 비전 아이콘 -->
+  <circle cx="280" cy="100" r="40" fill="url(#iconGradient)" opacity="0.8"/>
+  <text x="280" y="110" text-anchor="middle" font-size="24" fill="white" font-weight="bold">🔮</text>
+  <text x="280" y="160" text-anchor="middle" font-size="12" fill="#25A69B" font-weight="bold">비전</text>
+  
+  <!-- 연결선 -->
+  <line x1="160" y1="100" x2="240" y2="100" stroke="#25A69B" stroke-width="2" opacity="0.6"/>
+  
+  <!-- 하단 텍스트 -->
+  <text x="200" y="220" text-anchor="middle" font-size="16" fill="#25A69B" font-weight="bold">혁신적인 기술로</text>
+  <text x="200" y="240" text-anchor="middle" font-size="16" fill="#25A69B" font-weight="bold">더 나은 세상을 만듭니다</text>
+  
+  <!-- 장식 요소 -->
+  <circle cx="80" cy="200" r="3" fill="#25A69B" opacity="0.4"/>
+  <circle cx="320" cy="200" r="3" fill="#25A69B" opacity="0.4"/>
+  <circle cx="200" cy="180" r="2" fill="#25A69B" opacity="0.3"/>
+</svg>

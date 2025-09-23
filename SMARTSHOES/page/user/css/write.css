@@ -1,0 +1,313 @@
+
+/* 글쓰기 섹션 */
+.write-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.write-content {
+    width:100%;
+    margin: 0 auto;
+}
+
+/* 글쓰기 헤더 */
+.write-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.write-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.write-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.write-actions .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 폼 컨테이너 */
+.form-content {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 40px;
+}
+
+/* 폼 그룹 */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: white;
+}
+
+.form-group textarea {
+    max-width: 880px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #25A69B;
+    box-shadow: 0 0 0 3px rgba(37, 166, 155, 0.1);
+}
+
+.form-group input[type="file"] {
+    padding: 8px 15px;
+    border: 2px dashed #ddd;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+.form-group input[type="file"]:hover {
+    border-color: #25A69B;
+    background: #f0f9f8;
+}
+
+/* 폼 행 (2개 컬럼) */
+.form-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* 도움말 텍스트 */
+.form-help {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 체크박스 그룹 */
+.checkbox-group {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background: #25A69B;
+    border-color: #25A69B;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Summernote 에디터 커스터마이징 */
+.note-editor.note-frame {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.note-editor.note-frame:focus-within {
+    border-color: #25A69B;
+    box-shadow: 0 0 0 3px rgba(37, 166, 155, 0.1);
+}
+
+.note-toolbar {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 10px;
+}
+
+.note-editing-area {
+    background: white;
+}
+
+.note-editable {
+    padding: 20px;
+    min-height: 300px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.note-status-output {
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* 버튼 스타일 */
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size:16px;
+    transition: all 0.1s;
+    cursor: pointer;
+    transition:0.15s;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-color2);
+}
+
+.btn-secondary {
+    background: #999;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #777;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .page-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .page-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .write-section {
+        padding: 60px 0;
+    }
+    
+    .write-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .write-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .form-content {
+        padding: 25px;
+    }
+    
+    .form-grid2 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .write-actions {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .write-actions .btn {
+        flex: 1;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .write-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .form-content {
+        padding: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .note-editable {
+        padding: 15px;
+        min-height: 250px;
+    }
+    
+    .write-actions .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

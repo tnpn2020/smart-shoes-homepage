@@ -1,0 +1,24 @@
+.login-bg{background-image: url(https://lbcontents.s3.ap-northeast-2.amazonaws.com/images/admin/bg-login.jpg); height:100vh; position: relative; width:100%;}
+.login-container{left:50%; top:50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);
+    text-align: center; position: absolute; max-width: 480px; width: 100%;}
+.login-container > .inner{ height:100%;
+    transform: translateY(-10%); -webkit-transform: translateY(-10%); -ms-transform: translateY(-10%);
+    flex-direction: column; -ms-flex-direction: column;  margin:auto; padding-left:16px; padding-right:16px;}
+
+.login-container h1{font-size:3.75em; color:#fff;}
+.login-container .medium{color:#eee;}
+
+.login-container .form{background-color: rgba(255,255,255,.7); padding:48px 10%; border-radius: 4px;
+    box-shadow: 0px 0px 4px 2px rgba(104, 63, 110, 0.25);}
+.login-container .form dt{text-align: left; display: block; font-weight: 700; margin-bottom:4px;}
+.login-container .form dd{width: 100%;}
+.login-container .form dd input{width: 100%; height:44px; border:1px solid transparent;}
+
+
+.form-wrap{width: 100%;}
+.form dt, .form dd{display:inline-block;}
+.form dt{text-align: left; min-width:80px; max-width: 220px;}
+.form input{background-color:#fff; height:36px; padding-left:8px; padding-right:8px; }
+
+.login-container .btn{width: 100%; height:56px; background-color:#4589d5; font-size:18px; font-weight: 600;}
+.login-container .btn:hover, .login-container .btn.active{background-color:#fff; color:#4589d5;}
