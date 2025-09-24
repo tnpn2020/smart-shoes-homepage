@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: mysql:5.7
+    image: mysql:8.0
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: Shoenet1!
@@ -13,7 +13,7 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - appnet
-    command: --sql_mode=''
+    command: --default-authentication-plugin=mysql_native_password --sql_mode=''
 
   php:
     build:

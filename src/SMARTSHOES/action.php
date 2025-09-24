@@ -1,6 +1,6 @@
 <?php
-    echo phpinfo();
-    exit;
+    // echo phpinfo();
+    // exit;
     $Root = $_SERVER["DOCUMENT_ROOT"]; 
     $project_name = 'SMARTSHOES'; 
     $dir = $Root."/".$project_name."/";
@@ -78,14 +78,14 @@
     if(!isset($json["ctl"]) || $json["ctl"] == "move"){
         //RSS meta data 조회를 위해 모든 페이지에서 db로 조회가 필요해져서 추가
         // $db = new db("syfm498"); // DB변경시 여기 수정
-        $db = new db($project_name); // DB변경시 여기 수정
+        $db = new db("smart_shoes"); // DB변경시 여기 수정
         $array["file_manager"] = new file_manager($array["dir"], $server_mode, $project_name); //파일매니저 프로젝트 경로, 저장모드(s3,server), 프로젝트이름
         $array["db"] = new AppDB($db, $array["file_manager"]);
         new MoveController($array);
     }else{
         // $db = new db("shoppingmall"); // DB변경시 여기 수정
         // $db = new db("syfm498"); // DB변경시 여기 수정
-        $db = new db($project_name); // DB변경시 여기 수정
+        $db = new db("smart_shoes"); // DB변경시 여기 수정
         $array["file_manager"] = new file_manager($array["dir"], $server_mode, $project_name); //파일매니저 프로젝트 경로, 저장모드(s3,server), 프로젝트이름
         $array["db"] = new AppDB($db, $array["file_manager"]);
         $app = new App($array);
