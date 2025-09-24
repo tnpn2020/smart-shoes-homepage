@@ -120,8 +120,8 @@
                             <button type="button" class="btn btn-primary" onclick="handleFormSubmit()">등록하기</button>
                             <button type="button" class="btn btn-secondary" onclick="history.back()">취소</button>
                             <!-- 개발용 버튼들 -->
-                            <button type="button" class="btn btn-info" onclick="fillTestData()" style="margin-left: 10px;">테스트 데이터 입력</button>
-                            <button type="button" class="btn btn-warning" onclick="clearTestData()">폼 초기화</button>
+                            <!-- <button type="button" class="btn btn-info" onclick="fillTestData()" style="margin-left: 10px;">테스트 데이터 입력</button>
+                            <button type="button" class="btn btn-warning" onclick="clearTestData()">폼 초기화</button> -->
                         </div>
                     </div>
 
