@@ -6,7 +6,7 @@
             <p>지금 바로 스마트신발 서비스를 시작하고 <br>사회적 약자를 위한 혁신적인 솔루션을 경험해보세요.</p>
             <div class="cta-buttons">
                 <!-- <a href="?param=apply" class="btn btn-primary">서비스 신청하기</a> -->
-                <a class="btn btn-secondary">앱 다운로드</a>
+                <a href="https://gcon.smart-village.kr/apk/smartshoes.apk" class="btn btn-secondary">앱 다운로드</a>
             </div>
         </div>
     </section>
