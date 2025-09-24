@@ -8,8 +8,8 @@
 			// Create connection
 			$this->dataBase = $dataBase;
 			
-			$this->conn = new \mysqli('address', 'id', 'pw', $dataBase);
-			$this->conn->set_charset("utf8");
+			$this->conn = new \mysqli('mysql', 'root', 'Shoenet1!', $dataBase);
+			$this->conn->set_charset("utf8mb4");
 			
 
 			// Check connection
