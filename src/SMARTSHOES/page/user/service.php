@@ -111,7 +111,7 @@
                         <li><span>03</span> <br>사회적 비용 절감 효과</li>
                         <li><span>04</span> <br>지역 사회와의 연계를 통한 안전망 구축</li>
                     </ul>
-                    <span class="btn"><a href="?param=promotion">서비스 신청하기 <i class="xi-angle-right-min"></i></a></span>
+                    <span class="btn"><a href="?param=apply">서비스 신청하기 <i class="xi-angle-right-min"></i></a></span>
                 </div>
             </div>
         </div>

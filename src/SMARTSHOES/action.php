@@ -1,4 +1,7 @@
 <?php
+   phpinfo();
+   exit;
+
     $Root = $_SERVER["DOCUMENT_ROOT"]; 
     $project_name = 'SMARTSHOES'; 
     $dir = $Root."/".$project_name."/";
