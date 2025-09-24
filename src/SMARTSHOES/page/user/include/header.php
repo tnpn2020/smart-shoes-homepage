@@ -26,8 +26,8 @@
                     <li><a href="?param=notice" <?php echo (isset($_GET['param']) && $_GET['param'] == 'notice') ? 'class="active"' : ''; ?>>공지사항</a></li>
                     <li><a href="?param=contact" <?php echo (isset($_GET['param']) && $_GET['param'] == 'contact') ? 'class="active"' : ''; ?>>문의하기</a></li>
                     <div class="header-btn">
-                        <li><a href="?param=apply" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">신청서</a></li>
-                        <li><a href="" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">서비스 연결</a></li>
+                        <!-- <li><a href="?param=apply" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">신청서</a></li> -->
+                        <li><a href="https://gcon.smart-village.kr" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">서비스 연결</a></li>
                     </div>
                 </ul>
             </nav>
@@ -48,8 +48,8 @@
                 <li><a href="?param=promotion" <?php echo (isset($_GET['param']) && $_GET['param'] == 'promotion') ? 'class="active"' : ''; ?>>홍보관</a></li>
                 <li><a href="?param=notice" <?php echo (isset($_GET['param']) && $_GET['param'] == 'notice') ? 'class="active"' : ''; ?>>공지사항</a></li>
                 <li><a href="?param=contact" <?php echo (isset($_GET['param']) && $_GET['param'] == 'contact') ? 'class="active"' : ''; ?>>문의하기</a></li>
-                <li><a href="?param=apply" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">신청서</a></li>
-                <li><a href="?param=apply" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">서비스 연결</a></li>
+                <!-- <li><a href="?param=apply" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">신청서</a></li> -->
+                <li><a href="https://gcon.smart-village.kr" class="btn-apply <?php echo (isset($_GET['param']) && $_GET['param'] == 'apply') ? 'active' : ''; ?>">서비스 연결</a></li>
             </ul>
         </div>
     </div>
