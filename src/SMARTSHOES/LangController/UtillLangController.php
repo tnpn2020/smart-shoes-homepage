@@ -1,4 +1,7 @@
 <?php
+
+if(PHP_VERSION_ID >= 80200){
+	#[\AllowDynamicProperties]
 	class UtillLangController {
 		private $param;
         private $dir;
@@ -32,4 +35,7 @@
 			$this->model->font_link();
 		}
 	}
+}else{
+	print_r("php version is not 8.2.0");
+}
 ?>

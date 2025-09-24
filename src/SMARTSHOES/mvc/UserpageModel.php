@@ -3,6 +3,8 @@
         private $param;
         private $dir;
         private $conn;
+        private $project_name;
+
         function __construct($array){
             $this->param = $array["json"];
             $this->dir = $array["dir"];
@@ -23,8 +25,7 @@
             );
             $this->session = $array["session"];
             
-            $this->BillingSMS = new BillingSMSModel($array);
-            $this->MailForm = new MailForm($array);
+            // $this->MailForm = new MailForm($array);
 
             $this->email_project = $array["email_project_name"];
             $this->send_email = $array["to_email"];
@@ -929,7 +930,7 @@
                 FROM notice n 
                 LEFT JOIN notice_name nn ON n.idx = nn.notice_idx 
                 WHERE n.idx = '" . addslashes($param['idx']) . "'";
-        
+      
         $result = $this->conn->db_select($sql);
         
         if($result["result"] == "1" && !empty($result["value"])) {

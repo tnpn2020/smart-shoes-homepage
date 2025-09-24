@@ -1,8 +1,6 @@
 <?php
 class AppDB extends gf
 {
-    private $conn;
-
     function __construct($db, $file_manager){
     
         $this->conn = $db;

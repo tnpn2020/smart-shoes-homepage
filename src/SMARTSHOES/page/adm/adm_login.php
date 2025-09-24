@@ -11,7 +11,7 @@
 
 	<!-- css -->
 	<?php include_once $this->dir."page/adm/inc/common_css.php"; ?>
-	<link rel="stylesheet" type="text/css" href="/SYNICSRAY/common_css/adm/adm_login.css<?php echo $version;?>"/>
+	<link rel="stylesheet" type="text/css" href="/SMARTSHOES/common_css/adm/adm_login.css<?php echo $version;?>"/>
 
 	<!-- JS -->
     <?php include_once $this->dir."page/adm/inc/common_js.php"; ?>

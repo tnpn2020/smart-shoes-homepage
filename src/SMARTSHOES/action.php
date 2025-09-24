@@ -1,6 +1,4 @@
 <?php
-    // echo phpinfo();
-    // exit;
     $Root = $_SERVER["DOCUMENT_ROOT"]; 
     $project_name = 'SMARTSHOES'; 
     $dir = $Root."/".$project_name."/";
@@ -10,10 +8,10 @@
     $server_mode = "server"; //서버 동작모드(server or s3)
     
     $email = "";
-    $email_project_name = "시닉스레이";
-    $email_logo = "https://s3.ap-northeast-2.amazonaws.com/lbcontents/images/DONGSAN/160192713825253.png";
+    $email_project_name = "";
+    $email_logo = "";
     
-    $no_image = "https://s3.ap-northeast-2.amazonaws.com/lbcontents/images/admin/159725223480867.jpg"; //이미지가 없을때 나타나는 이미지
+    $no_image = "";
 
     if(!isset($json["move_page"])){
         $json["move_page"]="1";
@@ -56,7 +54,7 @@
         "project_name" => $project_name,
         "project_path" => $project_name."/page/user/",
         "project_admin_path" => $project_name."/page/adm/",
-        "project_admin_image_path" => "https://lbcontents.s3.ap-northeast-2.amazonaws.com/images/admin/",
+        "project_admin_image_path" => "",
         "no_image" => $no_image,
         "to_email"=>$email,
         "email_project_name" => $email_project_name,
@@ -66,13 +64,8 @@
         "version"=>"?v=".date("Y-m-d H:i:s"),
         "file_path"=>new file_path($server_mode, $project_name),
         "sub_file_path"=>new sub_file_path($server_mode, $project_name),
-        "send_number" => "01039518339",
-        // "send_number" => "",
-        // "send_id" => "admin",
-        "send_id" => "tester",
         "down_path" => $download_path,
-        // 알림톡 발송시 변경
-        // "send_id" => "ipiacosmetic",
+
     );
 
     if(!isset($json["ctl"]) || $json["ctl"] == "move"){
