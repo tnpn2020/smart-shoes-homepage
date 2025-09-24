@@ -15,18 +15,6 @@ services:
       - appnet
     command: --default-authentication-plugin=mysql_native_password --sql_mode=''
 
-  php:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: php-fpm
-    volumes:
-      - ./src:/var/www/html
-    depends_on:
-      - mysql
-    networks:
-      - appnet
-
 volumes:
   mysql_data:
 
