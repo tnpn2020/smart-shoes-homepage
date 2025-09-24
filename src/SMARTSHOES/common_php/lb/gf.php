@@ -1,6 +1,7 @@
 <?php
-	class gf{
-		
+if(PHP_VERSION_ID >= 80200){
+	#[\AllowDynamicProperties]
+	class gf{		
 		function jsonDecode($obj){
 			$json = json_decode($obj,true);
 			return $json;
@@ -710,4 +711,7 @@
 			}
 		}
 	}
+}else{
+	print_r("php version is not 8.2.0");
+}
 ?>
